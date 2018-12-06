@@ -1,0 +1,52 @@
+
+#mapa, #mapa2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.map {
+    width: 100%;
+    margin-top: 30px;
+    height: 600px;
+    position: relative;
+    margin-bottom: -60px;
+}
+
+.main-table-container {
+    display: flex;      
+    width: 97%;
+    overflow-y: hidden;
+    table{
+        width: 99%;
+    }
+}
+.mapa2place{
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 10px;
+    &:hover{
+        color: #5f6a7a;
+        text-decoration: underline;
+    }
+}
+
+.maps-container {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    &__item{
+        height: 100%;
+        width: calc(100%);
+        #mapCount {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+}
+
+.sert{
+    padding: 40px 55px;
+    background-color: #f8fafc;
+}

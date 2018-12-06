@@ -1,0 +1,282 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.m-field{
+  color: #748191;
+  border-radius: 4px;
+  max-width: 310px;
+  border: none;
+  padding: 0 15px;
+  height: 50px;
+  font-size: 14px;
+  background: #f8fafc;
+  background-position: 20px 15px;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  border: 2px solid white;
+  width: 100%;
+  transition: 0.3s;
+  vertical-align: middle;
+  display: flex;
+  box-sizing: border-box;
+  &.field-phone{
+      background-image: url('../../static/img/content/placeholder-phone.png');
+      padding-left: 50px;
+  }
+  &.field-mail{
+      background-image: url('../../static/img/content/placeholder-mail.png');
+      padding-left: 50px;
+  }
+	&:focus{
+		border-color: #c6c9cc;
+		&::placeholder{
+      transform: translateY(-15px);
+      opacity: 0;
+		}
+	}
+	&::placeholder{
+        transition: 0.3s;
+        font-size: 12px;
+  color: #b4c6de;
+        font-size: 14px;
+	}
+	&:hover{
+		border-color: #dde0e4;
+	}
+	&:hover:focus{
+		border-color: #c6c9cc;
+	}
+}
+
+.error{
+	border: 2px solid red;
+	&:focus{
+		border-color: red;
+	}
+	&:hover{
+		border-color: red;
+	}
+	&:hover:focus{
+		border-color: red;
+	}
+}
+.valid{
+	border: 2px solid green;
+	&:focus{
+		border-color: green;
+	}
+	&:hover{
+		border-color: green;
+	}
+	&:hover:focus{
+		border-color: green;
+	}
+}
+
+.m-button{
+  height: 50px;
+  max-width: 100%;
+  width: 100%;
+  color: white;
+  background-color: #0f9bec;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'mont';
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    background-color: #108cd4;
+  }
+  &:active{
+    transform: translateY(1px);
+  }
+}
+
+
+
+.m-button-2{
+  height: 55px;
+  max-width: 100%;
+  width: 100%;
+  color: $text;
+  background-color: white;
+  display: flex;
+  border: 2px solid #e9eef2;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'mont';
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  &:hover{
+    background-color: #108cd4;
+    color: white;
+    border-color: #108cd4;
+  }
+  &:active{
+    transform: translateY(1px);
+  }
+}
+.m-button-3{
+  height: 55px;
+  max-width: 100%;
+  width: 100%;
+  color: $text;
+  background-color: white;
+  display: flex;
+  border: 2px solid #e9eef2;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'mont';
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid $color2;
+  background: $color2;
+  color: white;
+  &:hover{
+    background-color: white;
+    color: $text;
+    border-color: #e9eef2;
+  }
+  &:active{
+    transform: translateY(1px);
+  }
+}
+.m-button-cotainer {
+  display: flex;
+  max-width: 190px; 
+  margin: 30px 0;
+  margin-bottom: 50px;
+  .m-button {
+    height: 50px;
+  }
+}
+
+h2, .m-title-2{
+  font-size: 24px;
+  color: $text;
+  text-transform: uppercase;
+  display: block;
+  font-family: 'mont';
+  font-weight: bold;
+  margin-bottom: 15px; 
+  
+}
+
+h1, .m-title-1{
+  font-size: 30px;
+  color: $text;
+  text-transform: uppercase;
+  font-family: 'mont';
+  font-weight: bold;
+  margin-bottom: 15px; 
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  @media screen and(max-width: 425px) {
+      font-size: 24px;
+  }
+}
+
+p, .m-desc{
+  font-size: 18px;
+  color: $text;
+  display: flex;
+  margin: 12px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.m-desc-w{
+  color: white; 
+}
+
+ul, .m-list {
+  padding-left: 20px;
+  list-style: none;
+  li {
+    position: relative;
+    margin: 3px 0;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: -15px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+  }
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.main-table-container{
+  max-width: 100%;
+  overflow: auto;
+}
+
+.html {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  background-color: #f8fafc;
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    th,td{
+      padding: 20px 30px;
+      border: 2px solid #e9eef2;
+      text-align: left;
+      vertical-align: top;
+      margin: 0;
+      max-width: 300px;
+    }
+    tr{
+      &:nth-child(odd) {
+        background-color: #f3f8fc;
+      }
+      &:first-child{
+        background-color: #e9eef2; 
+      }
+    }
+    th{
+      text-transform: uppercase;
+    }
+    td{
+      font-size: 18px;
+      padding: 15px 30px;
+    }
+  }
+  figure{
+    padding: 0;
+    margin: 0;
+    margin: 30px 0;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

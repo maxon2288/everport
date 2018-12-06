@@ -1,0 +1,13 @@
+/* Your custom fonts here 
+ *  @include font-face("proximanova", "../fonts/proximanova/proximanovat-thin", 100, normal);
+ *  @include font-face("proximanova", "../fonts/proximanova/proximanova-thinit", 100, italic);
+ */
+    // font-family: "montserrat";
+
+
+@include font-face("mont", "../fonts/montserrat/montserrat-regular", 400, normal);
+@include font-face("mont", "../fonts/montserrat/montserrat-bold", 700, normal);
+
+
+@include font-face("prox", "../fonts/proximanova/proximanova-regular", 400, normal);
+@include font-face("prox", "../fonts/proximanova/proximanova-bold", 700, normal);

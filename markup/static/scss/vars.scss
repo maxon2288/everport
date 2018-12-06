@@ -1,0 +1,47 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+
+/*
+ *  Color
+ */
+$text: #283654;
+$description: #025cb2;
+$overlay: rgba(0,0,0,.7);
+$modal: #fff;
+$modal-name: #191D32;
+
+$placeholder: #8597a8;
+$bg: #00285c;
+$section-text: #fff;
+
+$color2: #0f9bec;  
+
+$link: #15489e;
+$link-hover: #ff4716;
+
+/*
+ * Sizes
+ */
+
+$desktopWidth: 1300px;
+$laptopWidth: 960px;
+$tableWidth: 720px;
+$smallTableWidth: 540px;
+$mobileWidth: 100%;
+
+/*
+ * Fonts
+ */
+
+$default-fonts: 'ProximaNova', sans-serif;
+
+
+
+/*
+ * Fonts Size
+ */
+$h1: rem(40);
+$h2: rem(36);
+$h3: rem(30);
+$h4: rem(24);
+$h5: rem(18);

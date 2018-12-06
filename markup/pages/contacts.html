@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        
+        {{> nav/nav}}
+        <div class="main">
+            {{> bread/bread}}
+            
+            <div class="block">
+                <div class="m-title-1">
+                    Контакты
+                </div>
+                <div class="addy">
+
+                    <div class="addy__items html bgcw">
+
+                        <div class="addy__item">
+                            <table class="addy__table">
+
+                                <tr>
+                                    <th>
+                                            Головной офис, г. Астрахань
+                                    </th>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <div class="td-cont">
+                                            <a href="#mapa2" class="addy__table-item mapa2place" data-mapx="46.357946" data-mapy="48.039054">
+                                                <b>Адрес:</b>
+                                                <p>ул. Ак. Королева 8</p>
+                                            </a>
+                                            <div class="addy__table-item">
+                                                <b>телефон:</b>
+                                                <a href="tel:+793424573535">+ 7 (9342) 457 35 35</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        
+                                        <div class="addy__table-item">
+                                            <b>Генеральный директор</b>
+                                            
+                                            <p>Данилова Оксана Юрьевна</p>
+                                            
+                                            <a class="mb30" href="tel:+79064573535">+ 7 906 457 35 35</a>
+
+                                            <b>Коммерческий директор</b>
+                                            <p>Данилова Оксана Юрьевна</p> 
+                                            <a href="tel:+79064573535">+ 7 906 457 35 35</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                
+                            </table>
+                        </div>
+
+                        <div class="addy__item">
+                            <table class="addy__table">
+
+                                <tr>
+                                    <th>
+                                        Филиал, г. Москва
+                                    </th>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="td-cont">
+                                            <a href="#mapa2" class="addy__table-item mapa2place" data-mapx="46.357946" data-mapy="48.039054">
+                                                <b>Адрес:</b>
+                                                <p>ул. Ак. Королева 8</p>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                        <div class="addy__table-item">
+                                            <b>Руководитель филиала</b>
+                                            
+                                            <p>Данилова Оксана Юрьевна</p>
+                                            
+                                            <a class="mb30" href="tel:+79064573535">+ 7 906 457 35 35</a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                
+                            </table>
+                        </div>
+
+                        <div class="addy__item">
+                            <table class="addy__table">
+
+                                <tr>
+                                    <th>
+                                        Филиал, г. Москва
+                                    </th>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <div class="td-cont">
+                                            <a href="#mapa2" class="addy__table-item mapa2place" data-mapx="46.357946" data-mapy="48.039054">
+                                                <b>Адрес:</b>
+                                                <p>ул. Ак. Королева 8</p>
+                                            </a>
+                                            <div class="addy__table-item">
+                                                <b>телефон:</b>
+                                                <a href="tel:+793424573535">+ 7 (9342) 457 35 35</a>
+                                            </div>
+                                        </div>                                          </div>
+
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        
+                                        <div class="addy__table-item">
+                                            <b>Руководитель филиала</b>
+                                            
+                                            <p>Данилова Оксана Юрьевна</p>
+                                            
+                                            <a class="mb30" href="tel:+79064573535">+ 7 906 457 35 35</a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                
+                            </table>
+                        </div>
+                    </div>
+
+                    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                    
+                </div>
+                
+            </div>
+
+            <div class="map">
+                <div id="mapa2" data-x="55.76" data-y="37.64"></div>
+            </div>
+            
+        </div>
+        
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+        
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

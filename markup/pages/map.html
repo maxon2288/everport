@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        {{> nav/nav}}
+
+        <div class="main">
+            {{> bread/bread}}
+
+            <div class="block mt60">
+                <h1>География поставок</h1>
+
+                <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение новых предложений. Товарищи! реализация намеченных плановых заданий требуют определения и уточнения новых предложений. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа направлений прогрессивного развития.
+                </p>
+
+                <div class="map-content mt60">
+                    <div class="map__lists">
+                        <div class="map__list">
+                            <ul>
+                                <li class="map-data" data-x="56.326887" data-y="44.005986">Нижний Новгород</li>
+                                <li class="map-data" data-x="53.195538" data-y="50.101783">Самара</li>
+                                <li class="map-data" data-x="48.707073" data-y="44.516930"> Волгоград</li>
+                                <li class="map-data" data-x="46.347869" data-y="48.033574">Астрахань</li>
+                            </ul>   
+                            <ul>
+                                <li class="map-data" data-x="42.983060" data-y="47.504682"> Махачкала</li>
+                                <li class="map-data" data-x="47.220983" data-y="38.917300">Таганрог</li>
+                                <li class="map-data" data-x="47.222078" data-y="39.720349">Ростов-на-Дону</li>
+                                <li class="map-data" data-x="47.112442" data-y="39.423581">Азов</li>
+                            </ul>   
+                            <ul>
+                                <li class="map-data" data-x="46.711524" data-y="38.276451"> Ейск</li>
+                                <li class="map-data" data-x="45.278410" data-y="37.370194">Темюрк</li>
+                                <li class="map-data" data-x="45.443597" data-y="40.672590">порт Кавказ</li>
+                            </ul>   
+                            <ul>
+                                <li class="map-data" data-x="45.356219" data-y="36.467378"> Керчь</li>
+                                <li class="map-data" data-x="44.616841" data-y="33.525495">Севастополь</li>
+                                <li class="map-data" data-x="44.723912" data-y="37.768974">Новороссийск</li>
+                            </ul>   
+                            <ul>
+                                <li class="map-data" data-x="44.095640" data-y="39.073553"> Туапсе</li>
+                                <li class="map-data" data-x="47.106615" data-y="51.913380">Атырау</li>
+                                <li class="map-data" data-x="43.635379" data-y="51.169135">Актау  </li>
+                            </ul>   
+
+                        </div>
+                    </div>
+
+                    <div class="maps-container">
+                        <div class="maps-container__item">
+                            <div id="mapCount"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,94 @@
+.popup {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 70px 15px 75px 15px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.4);
+    background-color: #fff;
+    z-index: 200;
+    width: 100%;
+    border-radius: 4px;
+    @media screen and(max-width: 768px) {
+        max-width: 90%;
+    }
+    .m-button {
+        width: 250px;
+    }
+    .form__content {
+        flex-direction: column;
+        max-width: 400px;
+        input {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        button {
+            width: 100%;
+        }
+    }
+    &__title{
+        margin-bottom: 0;
+        text-align: center;
+    }
+    &__desc {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .close-button{
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            transform: rotate(-90deg);
+        }
+        @media screen and(max-width: 768px) {
+            right: 10px;
+        }
+    }
+    &.visible{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.thanx {
+    &__title {
+        text-align: center;
+    }
+    &__desc {
+        text-align: center;
+    }
+}
+
+.overlay {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    background-color: #00285c;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    &.visible {
+        opacity: 0.5;
+        visibility: visible;
+    }
+}
+
+
+

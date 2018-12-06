@@ -1,0 +1,30 @@
+// Common styles of the project
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-auto-flow: column;
+    font-family: "prox";
+    font-weight: 400;
+    color: $text;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+body {
+    @media screen and(max-width: 1024px) {
+        padding-top: 60px;
+    }
+}
+*{
+    box-sizing: border-box;
+    outline: none;
+}   
+.no-scroll{
+    overflow-y: hidden;
+}
+.wow{
+    overflow: hidden;
+}
